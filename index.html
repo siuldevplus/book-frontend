@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Gestor de libros</h1>
+      <div class="form-container">
+        <form action="" id="book-form">
+          <input type="hidden" id="book-id" />
+          <div class="form-grid">
+            <input
+              type="text"
+              id="code"
+              placeholder="codigo Isbn(ISBN-123)"
+              required
+            />
+            <input
+              type="text"
+              id="title"
+              placeholder="titulo del libro"
+              required
+            />
+            <input type="text" id="author" placeholder="Autor" required />
+            <input type="text" id="price" placeholder="precio" required />
+            <select name="format" id="format">
+              <option value="" disabled selected>Formato...</option>
+              <option value="e-book">ebook</option>
+              <option value="hardcover">pasta dura</option>
+              <option value="e-pub">e-pub</option>
+            </select>
+            <input type="number" id="rating" placeholder="Calificación (0-5)" />
+          </div>
+          <textarea
+            name=""
+            id="description"
+            placeholder="Descripción del libro.."
+          ></textarea>
+          <div class="form-buttons">
+            <button type="submit" id="submit-button">Agregar libro</button>
+            <button type="button" id="cancel-button" class="cancel-btn">
+              cancelar ediccíon
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <h2>Catalogo de Libros</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <!--ecribe el comentario-->
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Precio</th>
+            <th>Formato</th>
+            <th>Calificación</th>
+            <th>Acciiones</th>
+          </tr>
+        </thead>
+        <tbody id="books-table-body"></tbody>
+      </table>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

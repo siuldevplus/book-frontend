@@ -1,0 +1,74 @@
+body{
+
+    font-family:  "Share Tech Mono", monospace;
+    background-color: #f4f7f6;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    background:  white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px  grey;
+}
+h1,h2{
+    color: salmon;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*formulario*/
+.form-container{
+
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: #f4f7f6;
+
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input,select,textarea,button{
+    width: 100%;
+    padding: 14;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+textarea{
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 15px;
+}
+button{
+
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition:  background-color 0.3s ease , transform 0.2s ease;
+    padding: 12px;
+}
+button::hover{
+    transform: translateY(-2px);
+}
+
+#submit-button{
+    background-color: blue;
+}
+#submit-button::hover{
+    background-color: violet;
+}
+.form-buttons{
+    display: flex;
+    gap: 10px;
+}

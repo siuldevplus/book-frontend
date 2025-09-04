@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const API_URL = "http://localhost:3300/api/books";
+    // const API_URL = "http://localhost:3300/api/books";
+    const API_URL = "https://19c6733fc9e3.ngrok-free.app/api/books";
 
     // Seleccionar los elementos del DOM
     const form = document.getElementById("book-form");
